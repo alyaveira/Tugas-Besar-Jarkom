@@ -1,11 +1,3 @@
-"""
-proxy.py - Forward Proxy Server dengan caching (TCP port 8080)
-Jaringan Komputer - Tugas Besar
-
-Cara jalankan: python3 proxy.py
-Pastikan webserver.py sudah berjalan lebih dulu.
-"""
-
 import socket
 import threading
 import os
@@ -20,7 +12,7 @@ PROXY_PORT   = 8080
 # !! GANTI ini dengan IP laptop yang menjalankan webserver.py !!
 # Kalau satu laptop (testing lokal): biarkan 127.0.0.1
 # Kalau beda laptop: misalnya '192.168.1.10'
-SERVER_HOST  = '127.0.0.1'
+SERVER_HOST  = '10.130.16.131'
 SERVER_PORT  = 8000
 
 TIMEOUT      = 5  # detik, timeout koneksi ke web server
